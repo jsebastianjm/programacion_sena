@@ -1,4 +1,4 @@
-'''print("\n- EJERCICIO 1")
+print("\n- EJERCICIO 1")
 print("Bienvenido usuario, ingresa tres calificaciones para calcular el promedio")
 notas = []
 notas.append(float(input("")))
@@ -14,9 +14,11 @@ precios = {
     "galletas": 1800
 }
 print(f"Los precios actuales de algunos de los productos son\n{precios}")
-impuesto=float(input("\nIngrese un porcentaje para elevar los precios: "))
+impuesto=float(input("\nIngrese un porcentaje para elevar el precio de los huevos: "))
 precios["huevos"]+=precios["huevos"]*(impuesto/100)
+impuesto=float(input("\nIngrese un porcentaje para elevar el precio de la gaseosa: "))
 precios["gaseosa"]+=precios["gaseosa"]*(impuesto/100)
+impuesto=float(input("\nIngrese un porcentaje para elevar el precio de las galletas: "))
 precios["galletas"]+=precios["galletas"]*(impuesto/100)
 print(precios)
 
@@ -67,21 +69,22 @@ print("\nPRODUCTO 1")
 producto1={
     "nombre":input("Ingrese el nombre del producto: "),
     "cantidad":int(input("Ingresa la cantidad: ")),
-    "precio":float(input("INgresa el precio: "))
+    "precio":float(input("Ingresa el precio: "))
 }
 print("\nPRODUCTO 2")
 producto2={
     "nombre":input("Ingrese el nombre del producto: "),
     "cantidad":int(input("Ingresa la cantidad: ")),
-    "precio":float(input("INgresa el precio: "))
+    "precio":float(input("Ingresa el precio: "))
 }
 print("\nPRODUCTO 3")
 producto3={
     "nombre":input("Ingrese el nombre del producto: "),
     "cantidad":int(input("Ingresa la cantidad: ")),
-    "precio":float(input("INgresa el precio: "))
+    "precio":float(input("Ingresa el precio: "))
 }
-print(producto1, producto2, producto3)
+productos=[producto1,producto2,producto3]
+print("LISTA DE PRODUCTOS\n",productos)
 
 print("\n- EJERCICIO 8")
 precios = {
@@ -133,7 +136,7 @@ elif unidad=="cm":
 elif unidad=="mm":
     print(f"{cantidad} {unidad} es equivalente a {cantidad*conversiones["mm"]} m")
 else:
-    print("...¿que?")'''
+    print("...¿que?")
     
 print("\n- EJERCICIO 11")
 print("Ingresa cinco precios para calcular el IVA")
@@ -145,6 +148,113 @@ print("\n- EJERCICIO 12")
 num1=int(input("Ingresa dos numeros para calcular operaciones matemticas entre ellos: "))
 num2=int(input(""))
 operaciones=(num1+num2,num1-num2,num1*num2,num1/num2)
-op=("suma","resta","multiplicacion","division")
-print(op)
-print(operaciones)
+print(f"La suma es {operaciones[0]}")
+print(f"La resta es {operaciones[1]}")
+print(f"La multiplicacion es {operaciones[2]}")
+print(f"La division es {operaciones[3]}")
+
+print("\n- EJERCICIO 13")
+estudiantes={
+    "marcos":5.0,
+    "juliana":4.8,
+    "juan": 4.3,
+    "pepito": 2.0,
+    "sofia": 3.4
+}
+print(estudiantes)
+print(f"El promedio total del desempeño de los estudiantes es: {sum(estudiantes.values())/len(estudiantes)}")
+
+print("\n- EJERCICIO 14")
+salarios=[int(input("Ingresa el salario de 5 empleados: ")), int(input("")),int(input("")),int(input("")),int(input(""))]
+nuevos_salarios=[salarios[0]+(salarios[0]*0.1),salarios[1]+(salarios[1]*0.1),salarios[2]+(salarios[2]*0.1),salarios[3]+(salarios[3]*0.1),salarios[4]+(salarios[4]*0.1)]
+print(f"Los salarios despues de un aumento del 10% quedaran en: {nuevos_salarios}")
+
+print("\n- EJERCICIO 15")
+precios = {
+    "huevos": 700,
+    "gaseosa": 2000,
+    "galletas": 1800
+}
+print(f"Los precios de los productos sin impuestos son\n{precios}")
+impuesto=float(input("\n¿Cual es el valor en porcentaje de los impuestos?: "))
+precios["huevos"]+=precios["huevos"]*(impuesto/100)
+precios["gaseosa"]+=precios["gaseosa"]*(impuesto/100)
+precios["galletas"]+=precios["galletas"]*(impuesto/100)
+print(precios)
+
+print("\n- EJERCICIO 16")
+print("Dame las edades de 5 personas: ")
+edades=[int(input("")), int(input("")), int(input("")), int(input("")), int(input(""))]
+mas_18=0
+menos_18=0
+if edades[0]>=18:
+    mas_18+=1
+else:
+    menos_18+=1
+if edades[1]>=18:
+    mas_18+=1
+else:
+    menos_18+=1
+if edades[2]>=18:
+    mas_18+=1
+else:
+    menos_18+=1
+if edades[3]>=18:
+    mas_18+=1
+else:
+    menos_18+=1
+if edades[4]>=18:
+    mas_18+=1
+else:
+    menos_18+=1
+print(f"La cantidad de adultos es de {mas_18}, y la cantidad de menores de edad es de {menos_18}")
+
+print("\n- EJERCICIO 17")
+dolares=700
+#conversion
+euros=dolares*0.85
+yenes=dolares*143.66
+pesos=dolares*4014.47
+conversion=(euros,yenes, pesos)
+
+print("\n- EJERCICIO 18")
+print("Para registrar la venta de tres productos hay que ingresar el nombre y la cantidad vendida de cada uno: ")
+
+print("\nPRODUCTO 1")
+nombre1=input("Ingresa el nombre del primer producto: ")
+cantidad1=int(input("Cantidad vendida: "))
+
+print("\nPRODUCTO 2")
+nombre2=input("Ingresa el nombre del segundo producto: ")
+cantidad2=int(input("Cantidad vendida: "))
+
+print("\nPRODUCTO 3")
+nombre3=input("Ingresa el nombre del tercer producto: ")
+cantidad3=int(input("Cantidad vendida: "))
+
+print(f"En total se han vendido {cantidad1+cantidad2+cantidad3} productos")
+
+print("\n- EJERCICIO 19")
+temperaturas=[34,23,34.4,11.2,5.7,39,4.5,8,25,23]
+temp_altas=[]
+temp_bajas=[]
+print(f"Lista de temperaturas: {temperaturas}")
+i = 0
+for i in range(9):
+    if temperaturas[i]>30:
+        temp_altas.append(temperaturas[i])
+    elif temperaturas[i]<10:
+        temp_bajas.append(temperaturas[i])
+print(f"Las temperaturas mayores a 30° son {temp_altas}")
+print(f"Las temperaturas menores a 10° son {temp_bajas}")
+
+print("\n- EJERCICIO 20")
+precios=[11990,5990,2000,1500,148990]
+print(f"Lista de precios: {precios}")
+pop1=int(input("Para editar un precio debes ingresar la posicion de este mismo (1-5): "))
+precios.pop(pop1-1)
+print(f"Lista de precios: {precios}")
+nuevo_precio=int(input("Para agrgar un nuevo precio debes ingresar su valor en numeros enteros: "))
+precios.append(nuevo_precio)
+precios.sort()
+print(f"Lista de precios: {precios}")
