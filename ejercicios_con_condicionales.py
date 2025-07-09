@@ -52,4 +52,30 @@ if total/10>100:
     print(f"Se le aplica un descuento del 10%, su nuevo total es de {total}")
 else:
     print(f"Su total es {total}")
-#holaaaaaa
+
+print("\n#7. Verifica si una persona puede votar (mayor o igual a 18 años).----------")
+edad=int(input("Ingresa su edad: "))
+if edad>=18:
+    print("Puede votar")
+else:
+    print("No puede votar")
+
+print("\n#8. Dado el tipo de cliente (VIP o normal), aplica un descuento del 20% solo a VIP.----------")
+estatus=input("El cliente es VIP? (SI->Ingrese 1) (NO->Ingrese 0)")
+total=float(input("Ingresa el total de los gastos: "))
+if total/10>100:
+    if estatus==1:
+        total-=total/20
+        print(f"Se le aplica un descuento del 20% por ser un estimado cliente VIP, su nuevo total es de {total}")
+    else:
+        total-=total/10
+        print(f"Se le aplica un descuento del 10%, su nuevo total es de {total}")
+else:
+    print(f"Su total es {total}")
+
+print("\n#9. Verifica si un numero es multiplo de 5 y 3 al mismo tiempo.----------")
+num=float(input("Ingresa un numero: "))
+if num%5==0 and num%3==0:
+    print("El numeros es multiplo de 5 y 3")
+else:
+    print("El numero no es multiplo de 5 y 3 al mismo tiempo")
