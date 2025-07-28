@@ -61,7 +61,7 @@ numeros.clear()
 print(numeros)
 
 print("\n- EJERCICIO 2")
-mi_lista = ["abcdefghijklmnopqrstuvwxyz", 97182, "Asus7#", True, 3.14159265368979]
+mi_lista = ["abcdefghijklmnopqrstuvwxyz", 97182, "A#sus7", True, 3.14159265368979]
 mi_lista.clear()
 print(mi_lista)
 
