@@ -138,7 +138,7 @@ else:
     print("Orden descendente")
     
 print("\n#17.----------")
-tupla=(24,32,28)
+tupla=(25,32,28)
 if tupla[1]>30:
     print("Edad mayor a 30")
 else:
@@ -199,7 +199,7 @@ drake={
     "producto":"pan",
     "precio":1200
 }
-if bool(drake.get("precio"))==True:
+if "precio" in drake:
     print(drake["precio"])
 else:
     print("No hay precio")
@@ -209,7 +209,7 @@ hector_lavoe={
     "pan":1200,
     "leche":2000
 }
-if bool(hector_lavoe.get("pan"))==True:
+if "pan" in hector_lavoe:
     print(hector_lavoe["pan"])
 else:
     print("Producto no disponible")
