@@ -47,7 +47,7 @@ else:
 
 print("\n#6. Calcula el precio final con un 10% de descuento si el total es mayor a $100.----------")
 total=float(input("Ingresa el total de los gastos: "))
-if total/10>100:
+if total>100:
     total-=total/10
     print(f"Se le aplica un descuento del 10%, su nuevo total es de {total}")
 else:
@@ -61,9 +61,9 @@ else:
     print("No puede votar")
 
 print("\n#8. Dado el tipo de cliente (VIP o normal), aplica un descuento del 20% solo a VIP.----------")
-estatus=input("El cliente es VIP? (SI->Ingrese 1) (NO->Ingrese 0)")
+estatus=int(input("El cliente es VIP? (SI->Ingrese 1) (NO->Ingrese 0): "))
 total=float(input("Ingresa el total de los gastos: "))
-if total/10>100:
+if total>100:
     if estatus==1:
         total-=total/20
         print(f"Se le aplica un descuento del 20% por ser un estimado cliente VIP, su nuevo total es de {total}")
