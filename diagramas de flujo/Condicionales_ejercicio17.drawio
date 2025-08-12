@@ -7,7 +7,7 @@
         <mxCell id="RVckmzkD97EgDxdsqbsB-1" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="210" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="RVckmzkD97EgDxdsqbsB-2" value="tupla=(25,32,28)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="RVckmzkD97EgDxdsqbsB-2" value="tupla=(4,9)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RVckmzkD97EgDxdsqbsB-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RVckmzkD97EgDxdsqbsB-1" target="RVckmzkD97EgDxdsqbsB-2" edge="1">
@@ -16,10 +16,10 @@
             <mxPoint x="440" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RVckmzkD97EgDxdsqbsB-5" value="if tupla[1]&amp;gt;30:" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="RVckmzkD97EgDxdsqbsB-5" value="if tupla[1]&amp;gt;5:" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="360" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RVckmzkD97EgDxdsqbsB-6" value="print(&quot;Edad mayor a 30&quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="RVckmzkD97EgDxdsqbsB-6" value="print(&quot;Coordenada alta&quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="450" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RVckmzkD97EgDxdsqbsB-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RVckmzkD97EgDxdsqbsB-5" target="RVckmzkD97EgDxdsqbsB-6" edge="1">
@@ -55,7 +55,7 @@
             <mxPoint x="500" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UZ0IgKjgWXEj56nT9QgP-1" value="print(&quot;Orden descendente&quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="UZ0IgKjgWXEj56nT9QgP-1" value="print(&quot;Edad menor a 30&quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UZ0IgKjgWXEj56nT9QgP-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="UZ0IgKjgWXEj56nT9QgP-1" target="RVckmzkD97EgDxdsqbsB-15" edge="1">

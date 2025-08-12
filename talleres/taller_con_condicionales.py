@@ -162,7 +162,7 @@ else:
 print("\n#20.----------")
 tupla1,tupla2=((3,4),(3,5))
 if tupla1==tupla2:
-    print("Tupla iguales")
+    print("Tuplas iguales")
 else:
     print("Tuplas diferentes")
     
