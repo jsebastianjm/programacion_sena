@@ -24,3 +24,15 @@ while True:
     lista.append(producto)
 print(f"Todos los productos en la lista son: {lista}")
 
+print("\n4. Contador de pares e impares.----------")
+pares,impares=([],[])
+w=1
+while w<=10:
+    num=int(input("Ingresa un numero: "))
+    if num%2==0:
+        pares.append(num)
+    else:
+        impares.append(num)
+    w+=1
+print(f"Pares: {pares}")
+print(f"Impares: {impares}")
